@@ -47,7 +47,7 @@ namespace solver
 
 	public:
 		ComplexVariable() { this->a = 0; this->b = 0; this->c = 0; }
-		ComplexVariable(complex<double> a, complex<double> b, complex<double> c) { this->a = a; this->b = b; this->c; }
+		ComplexVariable(complex<double> a, complex<double> b, complex<double> c) { this->a = complex(a); this->b = complex(b); this->c=complex(c); }
 
 		friend ComplexVariable operator+(ComplexVariable r, complex<double> n);
 		friend ComplexVariable operator+(complex<double> n, ComplexVariable r);
